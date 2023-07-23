@@ -5,7 +5,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use(express.static('img'))
-require('./confing/database');
+require('./confing/dataBase');
 
 // user router
 const userRouter = require('./router/userRouter');
