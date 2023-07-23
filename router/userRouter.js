@@ -34,7 +34,11 @@ router.delete('/:id', verifyToken, async (req, res) => {
     res.send(user);
 })
 
-
+//add user admin
+router.post('/admin', async (req, res) => {
+    const user = await userBLL.addUser(req.body);
+    res.send(user);
+})
 
 
 
